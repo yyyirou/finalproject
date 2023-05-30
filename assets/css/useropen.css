@@ -1,0 +1,213 @@
+.containerdisplay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opening {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+    color: black;
+}
+
+
+.titlehr {
+    position: relative;
+    border: #898986 solid;
+    top: 170px;
+}
+
+.usernav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    top: 140px;
+    background-color: #88A8E9;
+    width: 60%;
+}
+
+.usernav li {
+    margin: 25px;
+}
+
+.usermain {
+    text-decoration: underline;
+    color: black;
+    font-weight: 1000;
+
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.userother {
+    color: black;
+    font-weight: 400;
+
+}
+
+.usernav li:hover {
+    background-color: #B1CCFF;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+.userinfor {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    font-size: 150px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.userinfor p {
+    margin: 30px;
+}
+
+
+.useredit {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 70px;
+    font-size: 30px;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 3%;
+}
+
+.userwholeinfor {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    font-size: 30px;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 3%;
+    width: 90%;
+    height: 50%;
+    padding: 2%;
+}
+
+.userleft {
+    display: inline;
+    position: relative;
+    color: black;
+    font-weight: 550;
+
+    border-radius: 20px 20px;
+
+    text-align: right;
+    height: auto;
+    width: 200px;
+
+    padding: 1px;
+}
+
+.userright {
+    display: inline;
+    position: relative;
+    color: #2c2c2a;
+    font-weight: 430;
+
+    padding: 0 0 0 2%;
+    border-radius: 20px 20px;
+
+
+    height: auto;
+    width: 200px;
+
+    padding: 1px;
+}
+
+.usercon {
+    position: relative;
+    display: inline;
+
+    top: 10px;
+    font-size: 30px;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 3%;
+}
+
+
+/*container*/
+
+
+.container {
+    position: relative;
+    margin: 10px;
+    top: 200px;
+    width: 90%;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 2px 16px rgb(0, 0, .1);
+    border-radius: 20px;
+    color: black;
+}
+
+.tab_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgb(229, 229, 229);
+    position: relative;
+}
+
+.tab_box .tab_btn {
+    font-size: 30px;
+    font-weight: 600;
+    color: #373030;
+    background: none;
+    border: none;
+    padding: 18px;
+    cursor: pointer;
+}
+
+.tab_box .tab_btn:hover {
+    color: #345079;
+}
+
+.content_box {
+    padding: 20px;
+}
+
+.content_box .content {
+    display: none;
+    animation: moving .5s ease;
+}
+
+@keyframes moving {
+    from {
+        transform: translate(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+.content_box .content.active {
+    display: block;
+}
+
+
+.line {
+    position: absolute;
+    top: 62px;
+    left: 8%;
+    width: 156px;
+    height: 5px;
+    background-color: #bd3939;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}

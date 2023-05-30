@@ -1,0 +1,106 @@
+* {
+
+    margin: 0;
+    
+    padding: 0;
+    
+    box-sizing: inherit;
+    
+    }
+
+body{
+    background-color: #7B86AA;
+}
+
+.yellow{
+    background-color: #B9BAC5;
+    width: 1000px;
+    height: 600px;
+    margin-top: 55px;
+    margin-left: 270px;
+}
+
+.logo{
+    background-color: #36344F;
+    width: 1000px;
+    height: 600px;
+    clip-path: polygon(0 0, 55% 0, 35% 100%, 0% 100%);
+
+}
+
+.input{
+    float: right;
+    background-color: #EEEEEE;
+    width: 300px;
+    height: 380px;
+    margin-top: 120px;
+    margin-right: 90px;
+    text-align: center;
+    padding: 20px;
+}
+
+span{
+    padding: 10px;  
+}
+
+.user{
+    text-align: left;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 95%;
+    height: 40px;
+    background: transparent;
+    padding: 0 10px 0 80px;
+    transition: all 0.4s;
+    display: block;
+    border: none;
+    padding: 10px;
+}
+
+.password{
+    text-align: left;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 95%;
+    height: 40px;
+    background: transparent;
+    padding: 0 10px 0 80px;
+    transition: all 0.4s;
+    display: block;
+    border: none;
+    padding: 10px;
+}
+
+.margin{
+    margin-top: 10%;
+}
+
+.login{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.log{ 
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    border-color: #686868;
+    background-color: #DDDDDD;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#686868;
+}
+
+.log:hover{
+    background-color:#989B99 ;
+    color: #4B3A39;
+}
+
+.icon{
+    width: 25%;
+    margin-left: 10%;
+    margin-top: 15%;
+}
