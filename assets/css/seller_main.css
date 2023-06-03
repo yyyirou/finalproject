@@ -1,0 +1,125 @@
+/* Basic */
+
+
+html {
+	box-sizing: border-box;
+}
+
+#page-wrapper {
+	width: 100%;
+	margin: auto;
+	display: flex;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: #bbc1c1;
+	color: #ffffff;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 16.5pt;
+	font-weight: 300;
+	line-height: 1.65;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+/* logo */
+
+
+
+.logo {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+
+	z-index: 200;
+
+}
+
+
+
+
+.logo img {
+	margin: auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+
+/* Header */
+
+#header {
+	transition: background-color 0.2s ease-in-out;
+	background-color: #00375B;
+	height: 4.5em;
+	line-height: 3.5em;
+	padding: 0 1.25em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 736px) {
+
+	#header {
+		height: 2.75em;
+		line-height: 2.75em;
+	}
+
+	label #btn,
+	label #cancel {
+		position: fixed;
+		cursor: pointer;
+		color: white;
+		border-radius: 5px;
+		border: 1px solid #262626;
+		margin: 15px;
+		font-size: 29px;
+		background: #262626;
+		height: 45px;
+		width: 45px;
+		text-align: center;
+		line-height: 45px;
+		transition: all .5s ease;
+	}
+
+
+
+
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/newseller.css">
+    <link rel="stylesheet" href="assets/css/headerr.css">
     <link rel="icon" href="images/icon.jpg" type="image/x-icon"  >
     <script src="https://kit.fontawesome.com/605c912c10.js" crossorigin="anonymous"></script>
 </head>
@@ -55,112 +56,117 @@
 			<div style=" position: absolute; z-index:200 ">
 				<input type="checkbox" id="check">
 				<label for="check">
-				  <i class="fas fa-bars" id="btn"></i>
-				  <i class="fas fa-times" id="cancel"></i>
+				<i class="fas fa-bars" id="btn"></i>
+				<i class="fas fa-times" id="cancel"></i>
 				</label>
 
 				<div class="sidebar">
-				<a href="seller_index.html" class="active" target="_blank">
+				<a href="index.html" class="active">
 						<i class="fa-solid fa-house"></i>
 						<span>Home</span>
 				</a>
-		
-				<a href="seller_on.html" target="_blank">
+			
+				<a href="Apple.html" >
 					<i class="fa-brands fa-apple"></i>
-				  <span>上架商品</span>
+					<span>Apple</span>
 				</a>
-		
-				<a href="seller_del.html" target="_blank">
+			
+				<a href="Pixel.html">
 					<i class="fa-brands fa-google"></i>
-				  <span>下架商品</span>
+					<span>Pixel</span>
 				</a>
-		
-				<a href="newseller.html" target="_blank">
+			
+				<a href="Sony.html">
 					<i class="fa-solid fa-mobile-screen"></i>					  
-					<span>新增商品</span>
+					<span>Sony</span>
+				</a>
+			
+				<a href="OPPO.html">
+					<i class="fa-solid fa-mobile"></i>
+					<span>OPPO</span>
 				</a>
 
-				<a href="sign_in.html" target="_blank">
+				<a href="login.html">
 					<i class="fa-regular fa-user"></i>
-				  <span>Sign IN</span>
+					<span>Log IN</span>
 				</a>
-				  </div>
-			</div>	
+
+
+				<a href="signin.html">
+					<i class="fa-regular fa-user"></i>
+					<span>Sign IN</span>
+				</a>
+			    </div>
+		    </div>	
 	    </div>
-    
-		<main>
-			<article>
-			<section class="left">
-			<div class="img">
-                <input type="image" class="plus" src="images/plus.png">
-			</div>
-			</section>
-			<section class="right">
-			<div>
-				<h1 class="name"><input type="text" class="nam" placeholder="Name"></h1>
-	
-				<div class="price">
-				<input type="text" class="pri" placeholder="Price">
-				</div>
-	
-				<div class="love">
-					<img class="heart" src="images/icon/heart.png" alt="加入最愛">
-				</div>
-	
-				<div>
-					<h2 class="color">color</h2>
-					<select class="choose" name="color">
-						<option value=""selected class="choose">請選擇顏色</option>
-						<option value="星光色" class="choose">星光色</option>
-						<option value="午夜色" class="choose">午夜色</option>
-						<option value="藍色" class="choose">藍色</option>
-						<option value="粉紅色" class="choose">粉紅色</option>
-						<option value="綠色" class="choose">綠色</option>
-						<option value="紅色" class="choose">紅色</option>
-					</select>
-				</div>
-				<div class="number">
-					<input class="less" type="button" value="-" id="del" onclick="minus(0)"/>
-					<input class="quantity" type="text" value="1">
-					<input class="add" type="button" value="+" id="add" onclick="add(0)"/>
-				</div>
-	
-				<script>
-					function minus(ctnnum){
-						var num =Number(document.getElementsByClassName("quantity")[ctnnum].value);
-						if(num>1){
-							document.getElementsByClassName("quantity")[ctnnum].value=num-1;
-						}
-					}
-					function add(ctnnum) {
-						var num =Number(document.getElementsByClassName("quantity")[ctnnum].value);
-						if(num<100){
-							document.getElementsByClassName("quantity")[ctnnum].value=num+1;
-						}
-					}
-				</script>
-	
-				<div>
-					<button class="btn">NEW</button>
-				</div>
-				
-			</div>
-			</section>
-			</article>
-			
-			<section>
-				<fieldset class="introduce">
-					<legend class="intro"><h1>功能介紹</h1></legend>
-					<p></p> 
-				</fieldset>
-			</section>
-	
-		   
-		</main>
-		<footer class="footer">
-			<hr style="width:100%; height: 1px; border:none; background-color:#4444">
-			<h5>Copyrgiht @ 2023  By Starlink</h5>
-			<h5>瀏覽人數:2000</h5>
-		</footer>
+
+    <main>
+        <div class="imgg">
+            <input type="image" class="plus" src="images/plus.png">
+        </div>
+        
+        
+        <div class="info">
+            <h1 class="name"><input type="text" class="nam" placeholder="Name"></h1>
+
+            <div class="price">
+                <input type="text" class="pri" placeholder="Price">
+            </div>
+
+            <div class="love">
+                <img class="heart" src="images/icon/heart.png" alt="加入最愛">
+            </div>
+
+            <div>
+                <h2 class="color">color</h2>
+                <select class="choose" name="color">
+                    <option value=""selected class="choose">請選擇顏色</option>
+                    <option value="星光色" class="choose">星光色</option>
+                    <option value="午夜色" class="choose">午夜色</option>
+                    <option value="藍色" class="choose">藍色</option>
+                    <option value="粉紅色" class="choose">粉紅色</option>
+                    <option value="綠色" class="choose">綠色</option>
+                    <option value="紅色" class="choose">紅色</option>
+                </select>
+            </div>
+            <div class="number">
+                <input class="less" type="button" value="-" id="del" onclick="minus(0)"/>
+                <input class="quantity" type="text" value="1">
+                <input class="add" type="button" value="+" id="add" onclick="add(0)"/>
+            </div>
+
+            <script>
+                function minus(ctnnum){
+                    var num =Number(document.getElementsByClassName("quantity")[ctnnum].value);
+                    if(num>1){
+                        document.getElementsByClassName("quantity")[ctnnum].value=num-1;
+                    }
+                }
+                function add(ctnnum) {
+                    var num =Number(document.getElementsByClassName("quantity")[ctnnum].value);
+                    if(num<1000){
+                        document.getElementsByClassName("quantity")[ctnnum].value=num+1;
+                    }
+                }
+            </script>
+
+            <div>
+                <button class="button">NEW</button>
+            </div>
+            
+        </div>
+       
+        <fieldset class="introduce">
+            <legend class="intro"><h1>功能介紹</h1></legend>
+            <p></p> 
+        </fieldset>
+    </main>
+    <footer class="footer">
+        <hr style="width:100%; height: 1px; border:none; background-color:#4444">
+        <h5>Copyrgiht @ 2023  By Starlink</h5>
+        <h5>瀏覽人數:2000</h5>
+    </footer>
+
+    <a class="gotopbtn" href="#"><i class="fa-solid fa-arrow-up"></i></a>
 </body>
 </html>

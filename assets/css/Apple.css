@@ -1,411 +1,21 @@
-body {
-    background-color: #bbc1c1;
-
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    margin: 0px;
-}
-
-html {
-    box-sizing: border-box;
-}
-
-/* Header 排版 */
-#page-wrapper {
-    width: 100%;
-    margin: auto;
-    display: flex;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* logo */
-
-.logo {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 200;
-}
-
-.logo img {
-    margin: auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Header */
-
-#header {
-    transition: background-color 0.2s ease-in-out;
-    background-color: #00375B;
-    line-height: 3.5em;
-    padding: 0 1.25em;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-@media screen and (max-width: 736px) {
-
-    #header {
-        height: 2.75em;
-        line-height: 2.75em;
-    }
-
-    label #btn,
-    label #cancel {
-        position: fixed;
-        cursor: pointer;
-        color: white;
-        border-radius: 5px;
-        border: 1px solid #262626;
-        margin: 15px;
-        font-size: 29px;
-        background: #262626;
-        height: 45px;
-        width: 45px;
-        text-align: center;
-        line-height: 45px;
-        transition: all .5s ease;
-    }
-}
-
-/* righticon 右邊會員、購物車 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
-
-.righticon {
-
-    background-color: red;
-
-}
-
-#iconcart {
-    position: absolute;
-    right: 0;
-    cursor: pointer;
-    color: white;
-    border-radius: 5px;
-    border: 1px solid #262626;
-    margin: -15px 30px;
-    font-size: 29px;
-    background: #262626;
-    height: 45px;
-    width: 45px;
-    text-align: center;
-    line-height: 45px;
-    z-index: 150;
-}
-
-#iconuser {
-    position: absolute;
-    right: 58px;
-    cursor: pointer;
-    color: white;
-    border-radius: 5px;
-    border: 1px solid #262626;
-    margin: -15px 30px;
-    font-size: 29px;
-    background: #262626;
-    height: 45px;
-    width: 45px;
-    text-align: center;
-    line-height: 45px;
-    z-index: 150;
-}
-
-.search_wrap .input {
-    border: 0;
-    outline: none;
-    color: #8b7d77;
-}
-
-.search_wrap {
-    position: absolute;
-    margin: -19.5px auto;
-    z-index: 150;
-    right: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.search_wrap .search_box {
-    position: relative;
-    width: 500px;
-    height: 60px;
-}
-
-.search_wrap .search_box .btn {
-    position: absolute;
-    cursor: pointer;
-    background: #00375B;
-    color: #fff;
-    width: 50px;
-    height: 31px;
-    top: 14px;
-    right: 31px;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.search_wrap .search_box .input {
-    position: absolute;
-    top: 12px;
-    left: 225px;
-    width: 50%;
-    height: 60%;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 50px;
-    padding-right: 145px;
-}
-
-.search_wrap .search_box .btn:hover {
-    background: #7690da;
-}
-
-.search_wrap .search_box .btn.btn_common .fas {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 20px;
-}
-
-.search_wrap .search_box .btn {
-    width: 50px;
-    height: 31px;
-    top: 14px;
-    right: 31px;
-    border-radius: 3px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 25px;
-}
-
-/* find 搜尋*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
-
-.search_wrap .input {
-    border: 0;
-    outline: none;
-    color: #8b7d77;
-}
-
-.search_wrap {
-    position: absolute;
-    z-index: 150;
-    right: 120px;
-}
-
-.search_wrap .search_box {
-    position: relative;
-    width: 500px;
-    height: 60px;
-}
-
-.search_wrap .search_box .btn {
-    position: absolute;
-    top: 31px;
-    right: 31px;
-    width: 82px;
-    height: 31px;
-    background: #00375B;
-    z-index: 1;
-    cursor: pointer;
-}
-
-.search_wrap .search_box .input {
-    position: absolute;
-    top: 12px;
-    left: 225px;
-    width: 50%;
-    height: 60%;
-    padding: 10px 20px;
-    border-radius: 3px;
-    font-size: 18px;
-}
-
-.search_wrap .search_box .btn:hover {
-    background: #7690da;
-}
-
-.search_wrap .search_box .btn.btn_common .fas {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 20px;
-}
-
-.search_wrap .search_box .input {
-    border-radius: 50px;
-    padding-right: 145px;
-}
-
-.search_wrap .search_box .btn {
-    width: 50px;
-    height: 31px;
-    top: 14px;
-    right: 31px;
-    border-radius: 3px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 25px;
-}
-
-/* sliderbar 左邊點出來 */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-
-.sidebar {
-    position: fixed;
-    width: 240px;
-    left: -240px;
-    height: 100%;
-    background: #1e1e1e;
-    transition: all .5s ease;
-}
-
-.sidebar a {
-    display: block;
-    height: 65px;
-    width: 100%;
-    color: white;
-    line-height: 65px;
-    padding-left: 30px;
-    border-bottom: 1px solid black;
-    border-top: 1px solid rgba(255, 255, 255, .1);
-    border-left: 5px solid transparent;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    transition: all .5s ease;
-}
-
-
-.sidebar a.active,
-.sidebar a:hover {
-    border-left: 5px solid #b93632;
-    color: #fff;
-}
-
-.sidebar a i {
-    font-size: 23px;
-    margin-right: 16px;
-}
-
-.sidebar a span {
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-size: 16.5pt;
-    font-weight: 300;
-    line-height: 1.65;
-}
-
-#check {
-    display: none;
-}
-
-label #btn,
-label #cancel {
-    position: fixed;
-    cursor: pointer;
-    color: white;
-    border-radius: 5px;
-    border: 1px solid #262626;
-    margin: 30px;
-    font-size: 29px;
-    background: #262626;
-    height: 45px;
-    width: 45px;
-    text-align: center;
-    line-height: 45px;
-    transition: all .5s ease;
-}
-
-label #cancel {
-    opacity: 0;
-    visibility: hidden;
-}
-
-#check:checked~.sidebar {
-    left: 0px;
-}
-
-#check:checked~label #btn {
-    margin-left: 241px;
-    opacity: 0;
-    visibility: hidden;
-}
-
-#check:checked~label #cancel {
-    margin-left: 241px;
-    opacity: 1;
-    visibility: visible;
-}
-
 /*商品分類頁面*/
-
 main{
+    margin: auto;
     padding: 8%;
-    margin-left: 10%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 10fr 10fr;
+    /*grid-template-columns: repeat(3,1fr)*/
+    grid-auto-flow: row;
+    grid-gap: 10px;
 }
 
-.L1{
-    margin: 1px;
-    float: left;
-    width: 50%;
-}
-
-.R1{
-    margin: 1px;
-    float: right;
-    width: 50%;
-}
-
-.L2{
-    margin: 1px;
-    float: left;
-    width: 50%;
-}
-
-.R2{
-    margin: 1px;
-    float: right;
-    width: 50%;
+.card {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-size: cover;
+    text-align: center;
 }
 
 .i11{
@@ -413,7 +23,6 @@ main{
     height: 280px;  
     border-radius: 10px;
     border-radius: 10px;
-    margin-left: 3%;
 }
 
 .i12{
@@ -440,7 +49,6 @@ main{
 }
 
 h1{
- margin-left: 20%;
  padding: 20px;
 }
 
@@ -458,11 +66,6 @@ h1{
     text-align: center;
     line-height: 45px;
 }
-
-.arrow{
-    margin-left: 25%;
-}
-
 
 .part-title {
     color: black;
@@ -520,11 +123,26 @@ h1{
 
 }
 
-footer {
-    padding: 10px;
-    color: #444444;
+.gotopbtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #00375B;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
     text-align: center;
-    line-height: 30px;
-    height: 100px;
-    margin-top: 20px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 22px;
+}
+
+.footer {
+	padding: 20px;
+	color: #444444;
+	text-align: center;
+	bottom: 0;
+	position: relative;
+	width: 100%;
+	margin-top: 20px;
 }

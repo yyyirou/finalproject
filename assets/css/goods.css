@@ -10,12 +10,7 @@
     overflow: hidden;
 }
 
-.container {
-    width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    /*background-color: red;*/
-}
+
 
 .container-per {
     display: flex;
@@ -49,21 +44,6 @@
 }
 
 
-.container-thing {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: 30px;
-    text-align: left;
-    padding: 20px;
-    font-size: 25px;
-    text-align: center;
-    font-family: 微軟正黑體;
-    font-weight: bolder;
-    color: #fff;
-    z-index: 20;
-}
 
 .container-txt {
     top: 5px;

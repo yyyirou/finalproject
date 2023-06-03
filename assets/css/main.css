@@ -3,6 +3,7 @@
 
 html {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 #page-wrapper {
@@ -73,7 +74,7 @@ ul {
 #header {
 	transition: background-color 0.2s ease-in-out;
 	background-color: #00375B;
-
+	height: 4.5em;
 	line-height: 3.5em;
 	padding: 0 1.25em;
 	position: fixed;
@@ -86,6 +87,15 @@ ul {
 }
 
 
+.footer {
+	padding: 20px;
+	color: #444444;
+	text-align: center;
+	bottom: 0;
+	position: relative;
+	width: 100%;
+	margin-top: 20px;
+}
 
 
 
@@ -122,14 +132,4 @@ ul {
 
 
 
-}
-
-.footer {
-	padding: 20px;
-	color: #444444;
-	text-align: center;
-	bottom: 0;
-	position: relative;
-	width: 100%;
-	margin-top: 20px;
 }

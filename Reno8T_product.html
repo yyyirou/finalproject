@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/Reno8T.css">
+    <link rel="stylesheet" href="assets/css/Reno8T_product.css">
+    <link rel="stylesheet" href="assets/css/headerr.css">
     <link rel="icon" href="images/icon.jpg" type="image/x-icon"  >
     <script src="https://kit.fontawesome.com/605c912c10.js" crossorigin="anonymous"></script>
 </head>
@@ -60,38 +61,38 @@
 				</label>
 
 				<div class="sidebar">
-				<a href="#" class="active">
+				<a href="index.html" class="active">
 						<i class="fa-solid fa-house"></i>
 						<span>Home</span>
 				</a>
 			
-				<a href="#" >
+				<a href="Apple.html" >
 					<i class="fa-brands fa-apple"></i>
 					<span>Apple</span>
 				</a>
 			
-				<a href="#">
+				<a href="Pixel.html">
 					<i class="fa-brands fa-google"></i>
 					<span>Pixel</span>
 				</a>
 			
-				<a href="#">
+				<a href="Sony.html">
 					<i class="fa-solid fa-mobile-screen"></i>					  
 					<span>Sony</span>
 				</a>
 			
-				<a href="#">
+				<a href="OPPO.html">
 					<i class="fa-solid fa-mobile"></i>
 					<span>OPPO</span>
 				</a>
 
-				<a href="#">
+				<a href="login.html">
 					<i class="fa-regular fa-user"></i>
 					<span>Log IN</span>
 				</a>
 
 
-				<a href="#">
+				<a href="signin.html">
 					<i class="fa-regular fa-user"></i>
 					<span>Sign IN</span>
 				</a>
@@ -100,18 +101,15 @@
 	    </div>
 
     <main>
-        <article>
-        <section class="left">
-        <div class="img">
-            <img class="reno8t" src="images/OPPO/Reno8 T/IMG_3466.PNG" alt="iphone-12">
+        <div class="imgg">
+            <img class="reno8t" src="images/OPPO/Reno8 T/IMG_3466.PNG" alt="reno8t">
         </div>
-        </section>
-        <section class="right">
-        <div>
+        
+        
+        <div class="info">
             <h1 class="name">Reno8 T</h1>
-
             <div class="price">
-            <h2 class="nt">NT.14990</h2>
+                <h2 class="nt">NT.14990</h2>
             </div>
 
             <div class="love">
@@ -141,7 +139,7 @@
                 }
                 function add(ctnnum) {
                     var num =Number(document.getElementsByClassName("quantity")[ctnnum].value);
-                    if(num<100){
+                    if(num<1000){
                         document.getElementsByClassName("quantity")[ctnnum].value=num+1;
                     }
                 }
@@ -152,24 +150,20 @@
             </div>
             
         </div>
-        </section>
-        </article>
-        
-        <section>
-            <fieldset class="introduce">
-                <legend class="intro"><h1>功能介紹</h1></legend>
-                <p></p> 
-            </fieldset>
-        </section>
+       
+        <fieldset class="introduce">
+            <legend class="intro"><h1>功能介紹</h1></legend>
+            <p></p> 
+        </fieldset>
+       
 
-        <section>
-            <fieldset class="review">
-                <legend class="rev"><h1>評論</h1></legend>
-                <img class="people" src="images/people.png" alt="">
-                <div class="sth">
+        
+        <fieldset class="review">
+            <legend class="rev"><h1>評論</h1></legend>
+            <img class="people" src="images/people.png" alt="">
+            <div class="sth">
                 <h3>小戴</h3> 
                 <div class="commentstar">
-                    <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -178,43 +172,61 @@
                 <p>好用!讚!</p>
                 </div>
 
-                <hr style="color: #686868; size: 3px;border-style: dotted;">
+            <hr style="color: #686868; size: 3px;border-style: dotted;">
 
-                <img class="people" src="images/people.png" alt="">
-                <div class="sth">
-                <h3>沈蓁</h3> 
-                <div class="commentstar">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </div>
-                <p>2023/05/25</p>
-                <p>讚讚讚</p>
-                </div>
+            <img class="people" src="images/people.png" alt="">
+            <div class="sth">
+            <h3>沈蓁</h3> 
+            <div class="commentstar">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <p>2023/05/25</p>
+            <p>讚讚讚</p>
+            </div>
 
-                <hr style="color: #686868; size: 3px;border-style: dotted;">
+            <hr style="color: #686868; size: 3px;border-style: dotted;">
 
-                <img class="people" src="images/people.png" alt="">
-                <div class="sth">
-                <h3>賴大媽</h3> 
-                <div class="commentstar">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </div>
-                <p>2023/05/25</p>
-                <p>讚</p>
+            <img class="people" src="images/people.png" alt="">
+            <div class="sth">
+            <h3>賴大媽</h3> 
+            <div class="commentstar">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            <p>2023/05/25</p>
+            <p>讚</p>
+            </div>
+        </fieldset>
+        
+
+        <section>
+            <fieldset class="reviewbroad">
+                <legend class="rev"><h1>評論版</h1></legend>
+                <div  style="text-align: center;">
+                    <input class="commentinput" type="text" placeholder="User Name" style="text-align: center;"><br><br>
+                    <span class="star-rating" style="width:150px;height:30px">
+                        <input type="radio" name="rating" value="1"><i></i>
+                        <input type="radio" name="rating" value="2"><i></i>
+                        <input type="radio" name="rating" value="3"><i></i>
+                        <input type="radio" name="rating" value="4"><i></i>
+                        <input type="radio" name="rating" value="5"><i></i>
+                    </span>
+                    <br><br>
+                    <textarea name="" id="" cols="122" rows="10" placeholder="Write Something...."></textarea><br>
+                    <input type="button" value="Submit" class="commentsubmit">
                 </div>
             </fieldset>
         </section>
-       
     </main>
     <footer class="footer">
         <hr style="width:100%; height: 1px; border:none; background-color:#4444">
         <h5>Copyrgiht @ 2023  By Starlink</h5>
         <h5>瀏覽人數:2000</h5>
     </footer>
+
+    <a class="gotopbtn" href="#"><i class="fa-solid fa-arrow-up"></i></a>
 </body>
 </html>
