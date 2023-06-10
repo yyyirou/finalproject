@@ -20,6 +20,8 @@ main{
     text-align: center;
 }
 
+/*各個型號的照片大小、樣式調整*/
+
 .i11{
     width: 250px;
     height: 280px;  
@@ -140,9 +142,13 @@ main{
     border-radius: 10px;
 }
 
+/*商品名稱*/
+
 h1{
  padding: 20px;
 }
+
+/*箭頭*/
 
 #iconarrow {
     top: 40%;

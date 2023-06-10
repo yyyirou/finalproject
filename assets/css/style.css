@@ -7,7 +7,6 @@ body {
 
 html {
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 /* Header 排版 */
@@ -576,14 +575,11 @@ main {
     border-radius: 10px;
 }
 
-.footer {
+footer {
     padding: 10px;
     color: #444444;
     text-align: center;
     line-height: 30px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    position: relative;
-    margin-top: 150px;
+    height: 100px;
+    margin-top: 140px;
 }

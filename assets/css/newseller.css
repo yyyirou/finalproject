@@ -1,15 +1,21 @@
+/*新增後的圖片大小*/
+
 .imgg{
     position: absolute;
     top: 40%;
     left: 30%;
     display: block;
-}   
+} 
+
+/*新增圖片按鈕*/
 
 .plus{
     width: 100px;
     height: 100px;
     border-radius: 10px;
 }
+
+/*輸入商品名稱*/
 
 .name{
     margin-top: 25%;
@@ -32,6 +38,8 @@
     display: block;
     padding: 10px;
 }
+
+/*新增價錢*/
 
 .price{
     float: left;
@@ -135,6 +143,8 @@
     margin-left: 13%;
 }
 
+/*新增按鈕*/
+
 .button{
     margin: 20px;
     margin-left: 5%;  
@@ -147,6 +157,8 @@
     color:#686868;
 }
 
+/*規格介紹*/
+
 .introduce{
     margin-left: 20%;
     padding: 5%;
@@ -156,6 +168,10 @@
 
 .intro{
     margin-left: 41%;
+}
+
+.reviewbroad textarea{
+    resize: none;
 }
 
 p{

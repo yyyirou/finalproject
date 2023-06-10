@@ -2,15 +2,17 @@
 
 main{
     position: absolute;
-    left: 15%;
+    left: 12%;
     margin: auto;
     padding: 8%;
     width: 70%;
     display: grid;
     grid-template-columns: 10fr 10fr;
-    grid-auto-flow: row;
+    grid-template-columns: repeat(3,1fr);
     grid-gap: 10px;
 }
+
+/*卡片設置*/
 
 .card {
     padding: 20px;
@@ -19,6 +21,8 @@ main{
     background-size: cover;
     text-align: center;
 }
+
+/*標題*/
 
 h1 {
     padding: 10px 10px;
@@ -32,9 +36,13 @@ h1 {
         3px 3px 0 #686868;
 }
 
+/*hover顏色變化*/
+
 h1:hover {
     color: #D6BCA3;
 }
+
+/*點選箭頭*/
 
 #iconarrow {
     top: 40%;
@@ -66,13 +74,15 @@ h1:hover {
 }
 
 .footer {
-	padding: 20px;
-	color: #444444;
-	text-align: center;
-	bottom: 0;
-	position: absolute;
-	width: 100%;
-	margin-top: 20px;
+    padding: 10px;
+    color: #444444;
+    text-align: center;
+    line-height: 30px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    margin-top: 11px;
 }
 
 

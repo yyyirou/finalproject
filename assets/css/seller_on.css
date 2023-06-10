@@ -1,50 +1,3 @@
-
-/*商品頁面*/
-
-.mySlides img{
-    width: 400px;
-    height: 350px;
-    border-radius: 10px;
-}
-
-/*幻燈片*/
-.mySlides{
-    display: none;
-}
-
-
-.timee{
-    width: 1260px;
-    margin: auto;
-    background-color: rgba(60, 46, 40, 0.3);
-}
-
-
-  /* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .text {font-size: 11px}
-  }
-  
-/*商品頁面*/
-
-.imgg{
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    display: block;
-}   
-
 .name{
     margin-top: 20%;
     margin-right: 15%;
@@ -82,7 +35,9 @@
 /*顏色選項*/
 
 .color{
-    margin-left: 20%;
+    position: relative;
+    left: 20%;
+    top: 40%;
 }
 
 .choose{
@@ -94,11 +49,10 @@
     width: 20%;
     text-align: center; 
     position: relative;
-    top: 50%;  
+    top: 30%;  
     left: 50%;
-    transform: translate(-50%, -100%);
+    transform: translate(-30%, -100%);
 }
-
 
 /*數量減少*/
 
@@ -156,13 +110,20 @@
 
 .introduce{
     margin-left: 20%;
-    padding: 5%;
+    padding: 3%;
     width: 60%;
     
 }
 
 .intro{
     margin-left: 41%;
+}
+
+.intro li{
+    position: relative;
+    left: 35%;
+    text-align: left;
+    font-size: 18px;
 }
 
 p{
@@ -221,7 +182,7 @@ h3{
     resize: none;
 }
 
-.star-rating { /*星等*/
+.star-rating {
     font-size: 0;
     white-space: nowrap;
     display: inline-block;
@@ -229,7 +190,7 @@ h3{
     height: 30px;
     overflow: hidden;
     position: relative;
-    background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=);
+    background-image: url("../../images/yi/icon/star.png");
     background-size: contain;
 }
 
@@ -266,11 +227,11 @@ h3{
     height: 100%;
     width: 20%;
     z-index: 1;
-    background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=);
+    background-image: url("../../images/yi/icon/black_star.png");
     background-size: contain;
 }
 
-.star-rating input:hover+i, .star-rating input:checked+i {
+.star-rating input:checked+i {
     opacity: 1;
 }
 
