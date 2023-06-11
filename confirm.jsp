@@ -1,3 +1,9 @@
+<%@page contentType="text/html"%> 
+<%@page pageEncoding="UTF-8"%>
+<%@ page import = "java.sql.*, java.util.*"%>
+<%@include file="config.jsp" %>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,10 +34,12 @@
 				<li>
 					<div class="search_wrap">
 						<div class="search_box">
-							<input type="text" class="input" placeholder="search...">
-							<div class="btn">
-								<p><i class="fa-solid fa-magnifying-glass"></i></p>
-							</div>
+							<form action="search.jsp" method="post">
+                                <input type="text" class="input" placeholder="search..." name="product_name">
+                                <div class="btn" onclick="this.parentNode.submit()">
+                                    <p><i class="fa-solid fa-magnifying-glass"></i></p>
+                                </div>
+                            </form>
 						</div>
 					</div>
 				</li>
@@ -107,27 +115,48 @@
 	    </div>
 
     <nav>
-        <a href="enroll.html">註冊會員</a>
+        <a href="shopcar.jsp">購物車</a>
+        <a href="order.jsp">填寫資料</a>
+        <a href="jsp">送出訂單</a>
     </nav>
+
+    <script>
+        function minus(ctn_num){
+            var num = Number(document.getElementsByClassName("input_num")[ctn_num].value);
+            if(num > 1){
+                document.getElementsByClassName("input_num")[ctn_num].value = num -1;
+            }
+        }
+
+        function add(ctn_num){
+            var num = Number(document.getElementsByClassName("input_num")[ctn_num].value);
+            if(num < 100){
+                document.getElementsByClassName("input_num")[ctn_num].value = num +1;
+            }
+        }
+    </script>
 
     <main>
         <article>
             <section class="word">
                 <div class="shopcontainer">
                     <div class="infor_header">
-                        <div class="infor">會員註冊資訊</div>
+                        <div class="infor">訂單送出資訊</div>
                     </div>
 
                     <div class="shop_header shop_body">
                         <div class="infor02">
-                            <p>恭喜您已成功註冊！<br>♡ 趕快來挑選商品吧 ♡</p>
-                        </div>                        
+                            <p>恭喜您已送出訂單！<br>♡ 我們將盡快安排出貨 ♡</p>
+                        </div>
+                        
                     </div>
+
             </section>
         </article>
     </main>
+
     <div>
-        <a href="enroll.html"><input type="button" class="orderbutton" value="回上頁"></a>
+        <a href="order.jsp"><input type="button" class="orderbutton" value="回上頁"></a>
         <a href="index.html"><input type="button" class="orderbutton" value="回首頁"></a>
     </div>
 	
